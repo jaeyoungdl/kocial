@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Freesentation4";
+    /* font-weight: normal; */
+    src: url("../fonts/Freesentation-4Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "TheJamsil4";
+    font-weight: normal;
+    src: url("../fonts/The\ Jamsil\ 4\ Medium.ttf") format("truetype");
+  }
+
+
+  @font-face {
+    font-family: 'TheJamsil5';
+    src: url('../fonts/The Jamsil 5 Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+
+  @font-face {
+    font-family: 'TheJamsil3';
+    src: url('../fonts/The\ Jamsil\ 3\ Regular.ttf') format('woff2');
+    font-weight: 500;
+  }
+  
+  
+
+
+
+.hero {
+    background: linear-gradient(to bottom right, #ff5f5f, #f2edf3, #5faaff);
+    background-size: 200% 200%;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    animation: gradient-move 5s infinite;
+}
+
+@keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-family: 'TheJamsil5Bold';
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-family: 'TheJamsil3';
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-button {
+    font-family: "TheJamsil4";
+    background: linear-gradient(45deg, #6c63ff, #4ecdc4);
+    color: white;
+    border: none;
+    padding: 15px 5px;
+    width: 250px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+.additional-buttons {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-button {
+    background: linear-gradient(45deg, #6c63ff, #4ecdc4);
+    color: white;
+    border: none;
+}
+
+/* 스크롤 관련 스타일 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 새로운 스타일 추가 */
+
+/* h2 스타일 */
+.start-h2 {
+    font-size: 3rem; /* 제목 크기 조절 */
+    font-family: 'TheJamsil5Bold';
+    font-weight: 1000; /* 두께 조절 */
+    color: #000000; /* 색상 설정 */
+    margin-bottom: 1rem; /* 아래 여백 */
+    text-align: center; /* 가운데 정렬 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 텍스트 그림자 */
+    padding: 10px; /* 패딩 추가 */
+}
+
+/* p 스타일 */
+.start-p {
+    font-size: 1.2rem; /* 본문 크기 조절 */
+    color: #333; /* 색상 설정 */
+    font-weight: bold;
+    line-height: 1.6; /* 줄 간격 조절 */
+    text-align: center; /* 가운데 정렬 */
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto -9rem auto; /* 여백 설정 */
+    padding: 0 20px; /* 좌우 패딩 추가 */
+}
+
+.scroll-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(circle at bottom center, #a3c4f5, #ffffff 80%);
+    transition: all 0.5s ease-in-out;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 15rem;
+}
+
+/* 기존 스타일 유지 */
+
+/* info-box1 스타일 */
+.info-box1 {
+    
+    background: #80b2eb;
+
+    border-radius: 8px;
+    padding: 100px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+/* info-box1 내부 텍스트 스타일 */
+.info-box1 .step {
+    font-size: 3rem;
+    font-family: 'TheJamsil5Bold';
+    font-weight: 900;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.info-box1 .description {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: #ffffff; /* 예: 흰색 */
+    margin-top: 5cm; /* Step 텍스트와의 간격 */
+    position: absolute;
+    top: -90px; /* 위치 조정 */
+    left: 15px; /* 위치 조정 */
+    font-family: "Freesentation4";
+    letter-spacing:2px
+}
+
+/* info-box2 스타일 */
+.info-box2 {
+    background: #5094e0;
+    border-radius: 8px;
+    padding: 100px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* info-box2 내부 텍스트 스타일 */
+.info-box2 .step {
+    font-size: 3rem;
+    font-family: 'TheJamsil5Bold';
+    font-weight: 900;
+    color: #ffffff; /* 예: 흰색 */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.info-box2 .description {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: #ffffff; /* 예: 흰색 */
+    margin-top: 5cm; /* Step 텍스트와의 간격 */
+    position: absolute;
+    top: -90px; /* 위치 조정 */
+    left: 15px; /* 위치 조정 */
+    font-family: "Freesentation4";
+    letter-spacing:2px;
+    text-align: left;
+
+}
+
+/* info-box3 스타일 */
+.info-box3 {
+    background: #1679eb;
+    border-radius: 8px;
+    padding: 100px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+
+}
+
+/* info-box3 내부 텍스트 스타일 */
+.info-box3 .step {
+    font-size: 3rem;
+    font-family: 'TheJamsil5Bold';
+    font-weight: 900;
+    color: #f9fafa; /* 예: 흰색 */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.info-box3 .description {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: #ffffff; /* 예: 회색 */
+    margin-top: 5cm; /* Step 텍스트와의 간격 */
+    position: absolute;
+    top: -90px; /* 위치 조정 */
+    left: 15px; /* 위치 조정 */
+    font-family: "Freesentation4";
+    letter-spacing:2px
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-indicator-text {
+    font-family: 'TheJamsil4';
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #141414;
+    margin-bottom: 0.5rem;
+}
+
+.scroll-indicator-arrow {
+    width: 30px;
+    height: 30px;
+    color: #4F46E5;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

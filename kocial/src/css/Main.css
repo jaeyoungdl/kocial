@@ -1,0 +1,327 @@
+/* 전체 페이지 스타일 */
+.main-container {
+  background: linear-gradient(to bottom right, #ff5f5f65, #f2edf3, #5faaff77);
+  background-color: #f7fafc;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+}
+
+/* 콘텐츠 스타일 */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* 로고 컨테이너 스타일 */
+.logo-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.main-main-logo {
+  font-family: 'TheJamsil4Bold';
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  font-style: oblique;
+  margin-bottom: 2.5rem;
+}
+
+/* 플렉스 래퍼 스타일 */
+.flex-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메인 섹션 제목 스타일 */
+.main-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-icon {
+  margin-right: 0.5rem;
+}
+
+/* 드롭다운 래퍼 스타일 */
+.dropdown-wrapper {
+  position: relative; /* 부모 요소를 기준으로 드롭다운 메뉴 위치 설정 */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* 드롭다운 버튼 스타일 */
+.dropdown-button {
+  letter-spacing:1px;
+  font-family: 'TheJamsil4Bold';
+  width: 100%;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #357ab7;
+  transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #357ab7;
+}
+
+/* 드롭다운 라벨 스타일 */
+.dropdown-label {
+  display: flex;
+  align-items: center;
+}
+
+.flag-icon {
+
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-menu {
+  position: absolute;
+  letter-spacing:1px;
+  font-family: "Freesentation4";
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+  /* margin-left: 0.3rem; */
+  padding: 0.5rem 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  top: 100%; /* 드롭다운이 버튼 아래에 위치하도록 설정 */
+  left: 0;
+}
+
+.dropdown-item {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.dropdown-item:hover {
+  background-color: #ebf4ff;
+}
+
+/* 국가 카드 스타일 */
+.country-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.country-flag {
+  height: 200px;
+  padding: 1rem;
+  background-color: #edf2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.country-description {
+
+  padding: 1rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.country-name {
+  font-family: 'TheJamsil5Bold', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #357ab7;
+  margin-bottom: 0.7rem;
+}
+
+
+@font-face {
+  font-family: "Freesentation4";
+  /* font-weight: normal; */
+  src: url("../fonts/Freesentation-4Regular.ttf") format("truetype");
+}
+
+
+.description-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.description-word {
+  display: inline-block;
+  margin: 0.1rem;
+  font-family: "Freesentation4";
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* 트렌드 카드 스타일 */
+.trend-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  height: 100%;
+}
+
+.table-wrapper {
+  height: 100%;
+  /* overflow-y: auto; */
+}
+
+.trend-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@font-face {
+  font-family: "TheJamsil4";
+  font-weight: normal;
+  src: url("../fonts/The\ Jamsil\ 4\ Medium.ttf") format("truetype");
+}
+
+
+.table-header {
+  font-family: "TheJamsil4Bold";
+  padding: 0.5rem;
+  /* padding: 0.1rem; */
+
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #a0aec0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table-body {
+  color: #4a5568;
+}
+
+.table-row:hover {
+  background-color: #ebf4ff;
+  cursor: pointer;
+}
+
+
+
+
+.rank-cell, .word-cell {
+  font-family: "Freesentation4";
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1rem;
+  /* border-bottom: 0.01px solid #e2e8f0; */
+}
+
+.rank-cell {
+  color: #333;
+}
+
+.word-cell {
+  color: #555;
+}
+
+/* 화살표 클릭 스타일 */
+.arrow-click {
+  position: fixed;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow-text{
+  font-family: 'TheJamsil4Bold';
+  position: fixed;
+  right: 8%;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+.arrow-icon {
+  color: #4a90e2;
+  transition: color 0.2s;
+}
+
+.arrow-icon:hover {
+  color: #357ab7;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .country-flag {
+    height: 150px;
+  }
+}
+
+
+
+
+
+
+.dropdown-wrapper.open .dropdown-menu {
+  display: block;
+  max-height: 500px; /* 메뉴의 최대 높이 설정 */
+  width:100%;
+}
+
+.dropdown-wrapper .dropdown-menu {
+  display: none;
+  position: absolute; /* Ensure the dropdown menu is part of the document flow */
+}

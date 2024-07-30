@@ -1,0 +1,152 @@
+
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: bold;
+}
+
+
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff5f5f65, #f2edf3, #5faaff77);
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  background-color: #b488ff6e;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* .img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #b488ff6e;
+  margin-right: 0.2rem;
+  color: rgb(255, 255, 255);
+} */
+
+.login-kocial {
+  font-family: 'TheJamsil5Bold';
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+
+.login-text {
+  font-family: 'LINESeedKR-Bd';
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+  /* font-weight: 500; */
+  font-size:large;
+
+}
+
+p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #a876ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.facebook-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3b5898;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.kakao-login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FEE500;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.kakao-login-button:hover {
+  background-color: #E6CF00;
+}

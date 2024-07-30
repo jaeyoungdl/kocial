@@ -1,0 +1,252 @@
+/* PossibilityAnalysis.css */
+
+/* Container Styles */
+.ana-possibility-analysis {
+    background-color: #ffffff; /* Gray 50 */
+    /* padding: 1.5rem; */
+    border-radius: 0.75rem;
+    /* max-width:px; */
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+  
+  /* Country Analysis */
+  .ana-country-analysis {
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #e2e8f0; /* Gray 200 */
+  }
+  
+  .ana-country-button {
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(to right, #ebf8ff, #e2e8f0); /* Blue 50 to Indigo 50 */
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0; /* Gray 200 */
+  }
+  
+  .ana-country-title {
+    font-size: 1.25rem; /* Text XL */
+    font-weight: 600; /* Font Semibold */
+    color: #2d3748; /* Gray 800 */
+  }
+  
+  .ana-country-details {
+    padding: 1rem;
+    space-y: 0.5rem; /* Space between elements */
+  }
+  
+  .ana-section-title {
+    font-family: 'TheJamsil3';
+    text-align: left;
+    font-weight: 600; /* Font Semibold */
+    margin-bottom: 0.5rem;
+  }
+  
+  .ana-keywords-list {
+    list-style-type: disc;
+    padding-left: 1.25rem; /* PL 5 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .ana-keyword-item {
+    margin-bottom: 0.5rem;
+    font-family: "Freesentation4";
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+  /* Chart Section */
+  .ana-chart-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .ana-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 필요한 경우 높이 조정 */
+  }
+  
+  .ana-chart-title {
+    font-size: 1.25rem; /* Text XL */
+    font-weight: 600; /* Font Semibold */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Results */
+  .ana-results-title {
+    font-family: 'TheJamsil5';
+    font-size: 1.5rem; /* Text 2XL */
+    font-weight: 700; /* Font Bold */
+    margin-bottom: 1rem;
+  }
+  
+  /* Best Country */
+  .ana-best-country {
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #e2e8f0; /* Gray 200 */
+  }
+  
+  .ana-best-country-header {
+    background: linear-gradient(to right, #ebf8ff, #e9d8fd); /* Blue 100 to Purple 100 */
+    padding: 1rem;
+  }
+  
+  .ana-best-country-title {
+    font-family: 'TheJamsil5';
+    font-size: 1.25rem; /* Text XL */
+    font-weight: 600; /* Font Semibold */
+    color: #2d3748; /* Gray 800 */
+  }
+  
+  .ana-best-country-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ana-best-country-flag {
+    width: 8rem; /* Width 32 */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem; /* Rounded */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Shadow SM */
+  }
+  
+  .ana-best-country-name {
+    font-family: 'TheJamsil5';
+    font-size: 1.5rem; /* Text 2XL */
+    font-weight: 700; /* Font Bold */
+    color: #4a5568; /* Gray 700 */
+  }
+  
+  .ana-best-country-reason {
+    margin-top: 0.5rem;
+    color: #718096; /* Gray 600 */
+    text-align: center;
+  }
+  
+  /* Entry Strategies */
+  .ana-entry-strategies {
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #e2e8f0; /* Gray 200 */
+  }
+  
+  .ana-entry-strategies-header {
+    background: linear-gradient(to right, #ebf8ff, #e9d8fd); /* Blue 100 to Purple 100 */
+    padding: 1rem;
+  }
+  
+  .ana-entry-strategies-title {
+    font-family: 'TheJamsil5';
+    font-size: 1.25rem; /* Text XL */
+    font-weight: 600; /* Font Semibold */
+    color: #2d3748; /* Gray 800 */
+  }
+  
+  .ana-entry-strategies-content {
+    padding: 1rem;
+  }
+  
+  .ana-strategies-list {
+    list-style-type: disc;
+    padding-left: 1.25rem; /* PL 5 */
+  }
+  
+  .ana-strategy-item {
+    margin-bottom: 0.5rem;
+    font-family: "Freesentation4";
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+
+/* Recommendation Grid Container */
+.ana-recommendation-grid-container {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Grid Layout */
+  .ana-recommendation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; /* 간격을 완전히 제거 */
+    width: 100%;
+    max-width: 1200px; /* 필요한 경우 최대 너비를 설정 */
+  }
+  
+  /* Recommendation Card */
+  .ana-recommendation-card {
+    width: 100%; /* 카드가 그리드 셀의 전체 너비를 차지하도록 설정 */
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0; /* Gray 200 */
+    padding: 1rem; /* 내부 여백 추가 */
+  }
+  
+  .po-description-word {
+    display: inline-block;
+    margin: 0.1rem;
+    font-family: "Freesentation4";
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+
+
+  .chart-text {
+    font-family: "TheJamsil4";
+    fill: #333; /* 원하는 텍스트 색상 */
+  }
+  
+
+
+
+  @font-face {
+    font-family: "Freesentation4";
+    /* font-weight: normal; */
+    src: url("../fonts/Freesentation-4Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "TheJamsil4";
+    font-weight: normal;
+    src: url("../fonts/The\ Jamsil\ 4\ Medium.ttf") format("truetype");
+  }
+
+
+  @font-face {
+    font-family: 'TheJamsil5';
+    src: url('../fonts/The Jamsil 5 Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+
+  @font-face {
+    font-family: 'TheJamsil3';
+    src: url('../fonts/The\ Jamsil\ 3\ Regular.ttf') format('woff2');
+    font-weight: 500;
+  }
+  
+  

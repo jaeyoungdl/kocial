@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+@font-face {
+  font-family: 'TheJamsil6Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil6ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: bold;
+}
+
+
+.kocial{
+  font-family: 'TheJamsil6Bold';
+  font-size: x-large;
+
+}
+
+@font-face {
+  font-family: 'TheJamsil4Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil4Medium.woff2') format('woff2');
+  font-weight: 400;
+  /* font-style: bold; */
+}
+
+.hover-effect{
+  font-family: 'TheJamsil4Bold';
+}
+
+.login-button {
+    background-color: #81608fa9;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button:hover {
+    background-color: #4a8eff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    color: black;
+    height: 60px;
+  }
+
+
+
+  .nav-dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 12rem;
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link,
+.nav-button {
+  /* font-family: 'TheJamsil5Bold'; */
+  display: block;
+  border-radius: 10rem;
+  background-color:  #ffffffa9;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; /* small text */
+  color: #4a5568; /* Tailwind's gray-700 */
+  text-align: left;
+  width: 100%;
+  text-decoration: none; /* to remove the underline from the link */
+}
+
+.nav-link:hover,
+.nav-button:hover {
+  background-color: #f7fafc; /* Tailwind's gray-100 */
+}
+
+.nav-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+  

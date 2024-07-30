@@ -1,0 +1,203 @@
+/* Trend 컴포넌트 전체 레이아웃 */
+.trend-analysis-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 메인 컨텐츠 영역 */
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 검색 섹션 */
+.search-section {
+  padding: 5rem 4rem;
+  background: linear-gradient(to bottom right, #ff5f5f65, #f2edf3, #5faaff77);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+.markdown-content {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.search-container {
+  width: 800px;
+  margin:  auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-wrapper {
+  padding-top : 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+
+.image-text {
+  font-family: 'TheJamsil5Bold';
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.custom-image {
+  padding-top: 1rem;
+  width: 300px;
+  height: 200px;
+}
+
+/* 컨텐츠 영역 */
+.content {
+  padding: 2rem;
+}
+
+/* 추천 카드 컨테이너 */
+.recommendation-container {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* 카드 스타일 */
+.issue-keywords-card,
+.issue-topic-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 600px;
+}
+.issue-history-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1280px;
+  height: 650px;
+}
+.issue-keywords-card ul,
+.issue-history-card ul,
+.issue-topic-card ul {
+  list-style: none;
+  padding: 0;
+  overflow-y: auto; /* 내용이 많을 경우 스크롤 가능 */
+}
+
+.issue-keywords-card li,
+.issue-history-card li,
+.issue-topic-card li {
+  margin-bottom: 0.5rem;
+}
+
+.issue-keywords-card h2,
+.issue-history-card h2,
+.issue-topic-card h2 {
+  display: flex;
+  align-items: center; /* 수직 정렬 */
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-title-text {
+  font-family: 'TheJamsil4';
+  margin-left: 0.5rem; /* 아이콘과 텍스트 사이의 여백 */
+}
+
+.issue-topic-card li span {
+  font-weight: bold;
+}
+
+/* 모바일 레이아웃 */
+@media (max-width: 768px) {
+  .recommendation-container {
+    flex-direction: column;
+  }
+
+  .issue-keywords-card,
+  .issue-topic-card {
+    max-width: 100%;
+  }
+}
+
+
+.leftarrow-click{
+  position: fixed;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.trend-main-logo {
+  font-family: 'TheJamsil4Bold';
+  font-size: 4.7rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  font-style: oblique;
+  margin-top : 5rem;
+  margin-bottom: 0rem;
+}
+
+.leftarrow-text{
+  font-family: 'TheJamsil4Bold';
+  position: fixed;
+  left: 8%;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+
+
+
+@font-face {
+  font-family: "Freesentation4";
+  /* font-weight: normal; */
+  src: url("../fonts/Freesentation-4Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TheJamsil4";
+  font-weight: normal;
+  src: url("../fonts/The\ Jamsil\ 4\ Medium.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'TheJamsil5';
+  src: url('../fonts/The Jamsil 5 Bold.ttf') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+@font-face {
+  font-family: 'TheJamsil3';
+  src: url('../fonts/The\ Jamsil\ 3\ Regular.ttf') format('woff2');
+  font-weight: 500;
+}
+

@@ -1,0 +1,138 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff5f5f65, #f2edf3, #5faaff77);
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.id-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.id-input-container input {
+  flex: 1;
+  height: 40px; /* 버튼 높이와 맞춤 */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.check-id-button {
+  width: 100px; /* 버튼 너비 고정 */
+  height: 40px; /* 입력 필드와 높이 맞춤 */
+  background-color: #a876ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px; /* 버튼 텍스트 크기 조정 */
+}
+
+.check-id-button:hover {
+  background-color: #7350af;
+}
+
+.id-available, .id-not-available {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.id-available {
+  color: green;
+}
+
+.id-not-available {
+  color: red;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  background-color: #b488ff6e;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+h1{
+  font-weight: bold;
+}
+
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+  
+}
+
+p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #a876ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.facebook-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3b5898;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.create-account {
+  text-align: center;
+}
+

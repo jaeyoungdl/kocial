@@ -1,0 +1,247 @@
+/* Possibility 컴포넌트 전체 레이아웃 */
+.possibility-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 메인 영역 */
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 검색 섹션 */
+.search-section {
+  background: linear-gradient(to bottom right, #ff5f5f65, #f2edf3, #5faaff77);
+  min-height: 400px;
+  display: flex;
+  justify-content: center; /* Center the search container horizontally */
+  align-items: center; /* Center vertically if needed */
+}
+
+/* 검색 컨테이너 */
+.po-search-container {
+  width: 800px;
+  display: flex;
+  justify-content: space-between; /* Space between the search section and image */
+  align-items: center; /* Vertically center items */
+}
+
+/* 검색 헤더 */
+.search-header {
+  padding-top: 0.5rem;
+  width: 500px;
+  display: flex;
+  flex-direction: column; /* Stack logo and search input vertically */
+
+}
+
+/* 로고 스타일 */
+.po-main-logo {
+  font-family: 'TheJamsil4Bold';
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  font-style: oblique;
+  margin-bottom: 1rem;
+  letter-spacing:2px
+}
+
+/* 검색 입력 */
+.search-input-container {
+
+  display: flex;
+  align-items: center;
+  /* padding-left: 2rem; */
+  max-width: 100%; /* Maximum width of the search input container */
+}
+
+/* 검색 입력 스타일 */
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 4.5rem;
+  font-size: 1.125rem;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+}
+
+/* 검색 버튼 스타일 */
+.search-button {
+  width: 100px;
+  height: 45px;
+  transform: translateY(-20%); /* Adjust button position */
+  background-color: #14b8a6;
+  color: white;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  margin-left: 0.5rem; /* Space between input and button */
+}
+
+/* 이미지 스타일 */
+.bigdata {
+  width: 300px; /* Adjust the width as needed */
+  height: 280px;
+  margin-left: 2rem;
+}
+
+
+/* 컨텐츠 섹션 */
+.content-section {
+  background-color: white;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}
+
+.main-title {
+  font-family: 'TheJamsil5';
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.po-section-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 수평 중앙 정렬 */
+}
+
+
+.main-description {
+  padding-top: 2rem;
+  font-family: 'Freesentation4';
+  font-size: xx-large;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 2rem;
+}
+
+.sub-title {
+  background-color: #F0F8FF;
+  color: rgb(0, 0, 0);
+  border-radius: 0.8rem;
+  width: 300px;
+  height: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  margin: 0 auto 1rem; /* 수평 중앙 정렬 */
+  display: flex; /* 플렉스 박스 사용 */
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+
+}
+
+.recommendation-grid-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center; /* 그리드 컨테이너를 가운데 정렬 */
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 각 행에 두 개의 카드 */
+  gap: 1rem;
+  justify-content: center; /* 그리드 내 카드들을 가운데 정렬 */
+}
+
+.recommendation-card {
+  color: white;
+  width: 600px;
+  height: 430px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0.1, 0.2);
+}
+
+.k-heritage{
+  width: 500px;
+  height: 200px;
+  padding-left: 4rem;
+}
+
+.card-image {
+  width: 600px;
+  height: 200px;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+/* 모바일 레이아웃 */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input-container {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .online-music-card {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-content {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.content-section {
+  position: relative;
+}
+
+.content-section.loading {
+  filter: blur(3px);
+}
